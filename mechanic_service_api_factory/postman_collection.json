@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Mechanic ServiceTicket API",
+    "_postman_id": "12345678-1234-5678-1234-567812345678",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Mechanic",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/mechanics/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "mechanics",
+            ""
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Sam\",\n    \"specialization\": \"Engine\"\n}"
+        }
+      }
+    }
+  ]
+}
